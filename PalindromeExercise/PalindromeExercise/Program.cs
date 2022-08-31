@@ -1,4 +1,5 @@
 ﻿using System;
+using PalindromeExercise;
 
 namespace PalindromeExercise
 {
@@ -6,7 +7,11 @@ namespace PalindromeExercise
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Enter a word to see if it is a palindrome: ");
+            var word = new WordSmith();
+            var input = Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine(word.IsAPalindrome(input)); 
         }
     }
 }
